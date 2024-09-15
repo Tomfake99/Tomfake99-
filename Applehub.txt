@@ -1,4 +1,4 @@
-require(game.ReplicatedStorage.Util.CameraShaker):Stop()
+require(game.ReplicatedStorage.Notification).new("<Color=Blue>@Tomcaythue99<Color=/>"):Display()
 
 local bannedHWID = "7eda73f7-9bc5-4ab2-b7ca-884c80665df0"
 
@@ -66,15 +66,6 @@ UICorner.Parent = ImageButton
 ImageButton.MouseButton1Down:Connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
 end)
-
-local function playSound()
-    local sound = Instance.new("Sound", game:GetService("CoreGui"))
-    sound.SoundId = "rbxassetid://8219599909"
-    sound.Volume = 10
-    sound:Play()
-end
-
-playSound()
 
 repeat wait() until game.Players
 repeat wait() until game.Players.LocalPlayer
@@ -4631,7 +4622,7 @@ local function Get_Fruit(Fruit)
     return "Love-Love"
   elseif Fruit == "Spider Fruit" then
     return "Spider-Spider"
-  elseif Fruit == "Sound Fruit" then
+  elseif Fruit == "Fruit" then
     return "Sound-Sound"
   elseif Fruit == "Phoenix Fruit" then
     return "Phoenix-Phoenix"
@@ -4794,7 +4785,7 @@ end)
 
 game.StarterGui:SetCore("SendNotification", {
       Icon = "";
-      Title = "AnDepZai Hub", 
+      Title = "APPLE HUB", 
       Text = "Complete !";
 })                                                                                              
 wait(.3)
@@ -4859,7 +4850,7 @@ local Data =
                 },
                 {
                     ["name"] = "Ty For Use:",
-                    ["value"] = "**__AnDepZai Hub__**",
+                    ["value"] = "**__APPLE HUB__**",
                     ["inline"] = true          
                 }
             }              
